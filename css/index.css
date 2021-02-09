@@ -5,26 +5,35 @@
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    /* 继承父元素的颜色 */
+    color: inherit;
+}
+
 /* header */
 
 .header {
     width: 100%;
-    /* height: 68px; */
-    /* background-color: red; */
+    /* 子元素浮动后，无法撑开该元素，故需要设置高度 */
+    height: 68px;
+    /* 下边框 */
+    border-bottom: 1px solid #e2e2e2;
+    /* 阴影 */
+    box-shadow: 4px 0px 2px 2px rgba(0, 0, 0, .4);
+    /* 相对定位，用于定位.all_pro元素 */
+    position: relative;
+    line-height: 68px;
+    text-align: center;
 }
 
-.header .header_c {
-    /* height: 68px; */
-    background-color: pink;
-}
+.header .header_c {}
 
 .header .header_c h1 {
     width: 140px;
-    /* height: 68px; */
-    background-color: orange;
     /* 垂直居中 */
-    line-height: 68px;
     padding: 0 15px;
+    float: left;
 }
 
 .header .header_c h1 a {
@@ -35,4 +44,54 @@
     overflow: hidden;
     /* 待修改内容 */
     background: url(../img/logo.png) no-repeat center center;
+}
+
+.header .header_c .all_pro {
+    width: 168px;
+    background-color: yellow;
+    float: left;
+    margin: 0 10px;
+}
+
+.header .header_c .all_pro a {
+    display: block;
+}
+
+.header .header_c .all_pro a span {
+    /* 向下三角形 */
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #333;
+    position: relative;
+    left: 3px;
+    top: 3px;
+}
+
+.header .header_c .all_pro:hover span {
+    /* 鼠标移动到.all_pro标签后，子标签span标签的行为 */
+    /* 向下三角颜色形设置为透明 */
+    border-top-color: transparent;
+    /* 向下三角形 */
+    border-bottom-color: #333;
+    position: relative;
+    top: -3px;
+}
+
+.header .header_c .all_pro .product {
+    width: 100%;
+    height: 300px;
+    background-color: pink;
+    /* 绝对定位，相较于.header元素 */
+    position: absolute;
+    left: 0;
+    top: 68px;
+    display: none;
+}
+
+.header .header_c .all_pro:hover .product {
+    /* 鼠标移动到.all_pro标签后，子标签.product标签的行为 */
+    /* 显示.product */
+    display: block;
 }
