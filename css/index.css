@@ -11,6 +11,67 @@ a {
     color: inherit;
 }
 
+/* 产品盒子 */
+
+.common_product {
+    /* 用于产品盒子遮罩的定位 */
+    position: relative;
+    padding-top: 20px;
+}
+
+.common_product .pic {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.common_product .pic img {
+    width: 100%;
+}
+
+.common_product .content {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.common_product .content span {
+    color: #ce2b2b;
+}
+
+.common_product:hover .mask{
+    display: block;
+}
+
+/* mask 产品盒子遮罩 */
+
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.mask .btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26px;
+    margin-left: -69px;
+    width: 138px;
+    height: 52px;
+    background-color: #c78a49;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 4px;
+}
+
 /* header */
 
 .header {
@@ -57,11 +118,11 @@ a {
     background-color: #e6d6c6;
 }
 
-.header .header_c .all_pro a {
+.header .header_c .all_pro .all_type {
     display: block;
 }
 
-.header .header_c .all_pro a span {
+.header .header_c .all_pro .all_type .icon {
     /* 向下三角形 */
     display: inline-block;
     width: 0;
@@ -73,7 +134,7 @@ a {
     top: 3px;
 }
 
-.header .header_c .all_pro:hover span {
+.header .header_c .all_pro:hover .icon {
     /* 鼠标移动到.all_pro标签后，子标签span标签的行为 */
     /* 向下三角颜色形设置为透明 */
     border-top-color: transparent;
@@ -85,7 +146,7 @@ a {
 
 .header .header_c .all_pro .product {
     width: 100%;
-    background-color: pink;
+    background-color: #fff;
     /* 绝对定位，相较于.header元素 */
     position: absolute;
     left: 0;
@@ -110,7 +171,6 @@ a {
     width: 155px;
     padding-top: 45px;
     padding-left: 26px;
-    
 }
 
 .header .header_c .all_pro .product .pro_inner .inn_nav a:hover {
@@ -119,8 +179,14 @@ a {
 
 .header .header_c .all_pro .product .pro_inner .inn_detail {
     float: left;
-    width: 645px;
-    height: 300px;
-    background-color: blue;
+    width: 744px;
+    /* background-color: blue; */
     margin-left: 65px;
+}
+
+.header .header_c .all_pro .product .pro_inner .inn_detail li {
+    float: left;
+    width: 248px;
+    height: 320px;
+    /* background-color: gold; */
 }
