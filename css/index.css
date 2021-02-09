@@ -1,0 +1,38 @@
+/* 版心 */
+
+.inner_c {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    /* height: 68px; */
+    /* background-color: red; */
+}
+
+.header .header_c {
+    /* height: 68px; */
+    background-color: pink;
+}
+
+.header .header_c h1 {
+    width: 140px;
+    /* height: 68px; */
+    background-color: orange;
+    /* 垂直居中 */
+    line-height: 68px;
+    padding: 0 15px;
+}
+
+.header .header_c h1 a {
+    display: block;
+    /* 文本块中首行文本的缩进 */
+    text-indent: -100em;
+    /* 定义溢出元素内容区的内容会如何处理，hidden：内容会被修剪，并且其余内容是不可见的 */
+    overflow: hidden;
+    /* 待修改内容 */
+    background: url(../img/logo.png) no-repeat center center;
+}
