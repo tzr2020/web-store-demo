@@ -348,6 +348,37 @@ a {
 
 /* 新品推荐 */
 
-.new_pro {
+.new_pro .pro_datail {
+    /* 用于定位左右按钮 */
+    position: relative;
+    height: 365px;
+}
 
+.new_pro .pro_datail li {
+    float: left;
+    width: 275px;
+    height: 365px;
+    margin: 0 5px;
+}
+
+.new_pro .pro_datail li.common_product .pic {
+    width: 100%;
+}
+
+.new_pro .pro_datail a {
+    /* 相对于.new_pro .pro_datail定位 */
+    position: absolute;
+    top: 35%;
+    font-size: 28px;
+    font-family: serif;
+    color: #c3c3c3;
+    font-weight: 700;
+}
+
+.new_pro .pro_datail a.left {
+    left: -30px;
+}
+
+.new_pro .pro_datail a.right {
+    right: -30px;
 }
