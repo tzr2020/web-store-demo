@@ -40,7 +40,7 @@ a {
     color: #ce2b2b;
 }
 
-.common_product:hover .mask{
+.common_product:hover .mask {
     display: block;
 }
 
@@ -189,4 +189,86 @@ a {
     width: 248px;
     height: 320px;
     /* background-color: gold; */
+}
+
+.header .header_c .header_nav {
+    float: left;
+}
+
+.header .header_c .header_nav ul li {
+    float: left;
+}
+
+.header .header_c .header_nav ul li a {
+    display: block;
+    padding: 0 28px;
+}
+
+.header .header_c .header_nav ul li a:hover {
+    background-color: #e6d6c6;
+}
+
+.header .header_c .search {
+    float: left;
+    width: 154px;
+    height: 68px;
+    background-color: blue;
+    /* 待修改内容 */
+    background: url(../img/search.png) no-repeat center right;
+}
+
+.header .header_c .login {
+    float: right;
+}
+
+.header .header_c .login a {
+    padding: 0 5px;
+}
+
+.header .header_c .login span {
+    padding: 0 5px;
+}
+
+.header .header_c .login .gwc {
+    display: inline-block;
+    padding-left: 29px;
+    /* 待修改内容 */
+    background: url(../img/gwc.png) no-repeat left center;
+    /* 鼠标移入显示小手 */
+    cursor: pointer;
+}
+
+.header .header_c .login .gwc .check_out {
+    /* 绝对定位，相较于.header元素 */
+    position: absolute;
+    right: 200px;
+    top: 68px;
+    width: 230px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    display: none;
+}
+
+.header .header_c .login .gwc:hover .check_out {
+    display: block;
+}
+
+.header .header_c .login .gwc .check_out .check_con {
+    line-height: 58px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.header .header_c .login .gwc .check_out .check_con span {
+    color: #db2e2e;
+}
+
+.header .header_c .login .gwc .check_out .button {
+    background-color: #c78a49;
+    border-radius: 2px;
+    color: #fff;
+    line-height: 44px;
+    font-size: 16px;
 }
