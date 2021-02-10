@@ -72,6 +72,27 @@ a {
     border-radius: 4px;
 }
 
+/* 标题 */
+
+.common_title {
+    padding-top: 45px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.common_title h3 {
+    line-height: 50px;
+    font-size: 20px;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+
+.common_title p {
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
 /* header */
 
 .header {
@@ -276,7 +297,7 @@ a {
 /* banner */
 
 .banner {
-    height: 550px;
+    height: 600px;
     /* background-color: pink; */
     position: relative;
     margin-top: 3px;
@@ -301,7 +322,7 @@ a {
     position: absolute;
     left: 50%;
     margin-left: -45px;
-    bottom: 0;
+    top: 90%;
     width: 90px;
     height: 4px;
     /* background-color: gold; */
@@ -318,4 +339,10 @@ a {
 
 .banner .btns ol li.cur {
     background-color: #c78a49;
+}
+
+/* 新品推荐 */
+
+.new_pro {
+
 }
