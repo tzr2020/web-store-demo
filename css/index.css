@@ -108,6 +108,7 @@ a {
     line-height: 68px;
     text-align: center;
     font-size: 14px;
+    z-index: 1;
 }
 
 .header .header_c {}
@@ -301,6 +302,10 @@ a {
     /* background-color: pink; */
     position: relative;
     margin-top: 3px;
+}
+
+.banner .banner_c {
+    position: relative;
 }
 
 .banner ul li {
