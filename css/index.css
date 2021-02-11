@@ -382,3 +382,63 @@ a {
 .new_pro .pro_datail a.right {
     right: -30px;
 }
+
+/* 专题活动 */
+
+.special .left {
+    float: left;
+    width: 680px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.special .right {
+    float: right;
+}
+
+.special .right .r_top {
+    width: 450px;
+    height: 185px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.special .right .r_bottom {
+    width: 450px;
+    height: 185px;
+    overflow: hidden;
+}
+
+.special .pic {
+    position: relative;
+}
+
+
+.special .pic img {
+    /* 线性运动 */
+    transition: all .4s ease 0s;
+}
+
+.special .pic:hover img {
+    /* 放大元素 */
+    transform: scale(1.2);
+}
+
+.special .pic span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid #fff;
+    /* 线性运动 */
+    transition: all .4s ease 0s;
+}
+
+.special .pic:hover span {
+    /* 边框向内收缩 */
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+}
