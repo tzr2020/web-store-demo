@@ -385,6 +385,10 @@ a {
 
 /* 专题活动 */
 
+.special {
+    overflow: hidden;
+}
+
 .special .left {
     float: left;
     width: 680px;
@@ -436,6 +440,101 @@ a {
 }
 
 .special .pic:hover span {
+    /* 边框向内收缩 */
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+
+/* 良品 */
+
+.liangpin .content .lp_common {
+    /* 清除浮动 */
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.liangpin .content .lp_common ul li {
+    float: left;
+    width: 220px;
+    height: 310px;
+    margin-right: 10px;
+}
+
+.liangpin .content .lp_common ul li.last {
+    margin-right: 0;
+}
+
+.liangpin .content .lp_common ul li.common_product {
+    padding-top: 0;
+}
+
+.liangpin .content .lp_common ul li.common_product .pic {
+    width: 100%;
+}
+
+/*品牌 */
+
+.pinpai .content .pp_top {
+    overflow: hidden;
+}
+
+.pinpai .content .pp_top .pp1 {
+    float: left;
+    width: 504px;
+    height: 358px;
+    background-color: blue;
+}
+
+.pinpai .content .pp_top .pp2{
+    float: left;
+    width: 410px;
+    height: 172px;
+    background-color: gold;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.pinpai .content .pp_top .pp2.last {
+    margin-bottom: 0;
+}
+
+.pinpai .content .pp_top .pp3 {
+    float: right;
+    width: 197px;
+    height: 358px;
+    background-color: purple;
+}
+
+.pp_top .pic {
+    position: relative;
+    overflow: hidden;
+}
+
+.pp_top .pic img {
+    /* 线性运动 */
+    transition: all .4s ease 0s;
+    width: 100%;
+}
+
+.pp_top .pic:hover img {
+    /* 放大元素 */
+    transform: scale(1.2);
+}
+
+.pp_top .pic span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid #fff;
+    /* 线性运动 */
+    transition: all .4s ease 0s;
+}
+
+.pp_top .pic:hover span {
     /* 边框向内收缩 */
     left: 10px;
     right: 10px;
