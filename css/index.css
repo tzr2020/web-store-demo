@@ -661,3 +661,80 @@ a {
     font-size: 12px;
     color: #777;
 }
+
+/* footer */
+
+.footer {
+    background-color: #f8f8f8;
+}
+
+.footer .footer_c .f_top {
+    overflow: hidden;
+    padding: 30px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.footer .footer_c .f_top .copy {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #636363;
+}
+
+.footer .footer_c .f_top .copy p {
+    padding-top: 20px;
+}
+
+.footer .footer_c .f_top .copy p:hover {}
+
+.footer .footer_c .f_top .about {
+    float: left;
+    margin: 0 45px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer .footer_c .f_top .about dt {
+    font-size: 16px;
+}
+
+.footer .footer_c .f_top .ewm {
+    float: right;
+    width: 120px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.footer .footer_c .f_top .ewm img {
+    width: 100%;
+}
+
+.footer .footer_c .f_bot {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.footer .footer_c .f_bot .f_icon {
+    float: left;
+}
+
+.footer .footer_c .f_bot .f_icon p {
+    line-height: 30px;
+    font-size: 12px;
+    color: #919191;
+}
+
+.footer .footer_c .f_bot .f_icon img {
+    margin-right: 5px;
+}
+
+.footer .footer_c .f_bot .icp {
+    float: right;
+    line-height: 100px;
+}
+
+.footer .footer_c .f_bot .icp img {
+    margin-left: 10px;
+}
