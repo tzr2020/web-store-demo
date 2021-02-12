@@ -417,7 +417,6 @@ a {
     position: relative;
 }
 
-
 .special .pic img {
     /* 线性运动 */
     transition: all .4s ease 0s;
@@ -487,7 +486,7 @@ a {
     background-color: blue;
 }
 
-.pinpai .content .pp_top .pp2{
+.pinpai .content .pp_top .pp2 {
     float: left;
     width: 410px;
     height: 172px;
@@ -549,6 +548,7 @@ a {
     text-align: center;
     line-height: 30px;
     color: #5d5d5d;
+    margin-bottom: 20px;
 }
 
 .pinpai .content .pp_bottom .pp_chara {
@@ -578,4 +578,86 @@ a {
 
 .pinpai .content .pp_bottom .pp_chara a:hover img {
     left: 30%;
+}
+
+/* 体验 */
+
+.tiyan {
+    height: 600px;
+    background-color: #f4f0ea;
+}
+
+.tiyan .ty_inner .content ul {
+    /* 可以被浮动子元素撑开 */
+    overflow: hidden;
+}
+
+.tiyan .ty_inner .content ul .ty_content {
+    position: relative;
+    float: left;
+    width: 276px;
+    height: 432px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.tiyan .ty_inner .content ul .ty_content.last {
+    margin-right: 0;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_top {
+    overflow: hidden;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_top img {
+    width: 100%;
+    transition: all .5s ease 0s;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_top:hover img {
+    transform: scale(1.1);
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_bottom {
+    position: absolute;
+    bottom: 12px;
+    width: 244px;
+    left: 50%;
+    margin-left: -130px;
+    background-color: #fff;
+    padding: 0 8px;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_bottom .title {
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_bottom .title .tit_name {
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_bottom .title .tit_pri {
+    float: right;
+    color: #c78a49;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_bottom .detail {
+    font-size: 12px;
+    line-height: 18px;
+    color: #4d4d4d;
+    /* 多行文本溢出时使用省略号 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.tiyan .ty_inner .content ul .ty_content .ty_bottom .footer {
+    line-height: 30px;
+    font-size: 12px;
+    color: #777;
 }
