@@ -656,7 +656,7 @@ a {
     -webkit-box-orient: vertical;
 }
 
-.tiyan .ty_inner .content ul .ty_content .ty_bottom .footer {
+.tiyan .ty_inner .content ul .ty_content .ty_bottom .ty_footer {
     line-height: 30px;
     font-size: 12px;
     color: #777;
