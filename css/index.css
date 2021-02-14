@@ -738,3 +738,55 @@ a {
 .footer .footer_c .f_bot .icp img {
     margin-left: 10px;
 }
+
+/* 返回顶部按钮 */
+
+.fix_top {
+    position: fixed;
+    right: 80px;
+    bottom: 240px;
+    width: 50px;
+    color: #fff;
+}
+
+.fix_top p {
+    height: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fix_top p.qq {
+    position: relative;
+}
+
+.fix_top p.qq img {
+    position: absolute;
+    left: -150px;
+    top: 0;display: none;
+}
+
+.fix_top p.qq:hover img {
+    display: block;
+}
+
+.fix_top p.wx {
+    position: relative;
+}
+
+.fix_top p.wx img {
+    position: absolute;
+    left: -150px;
+    top: 0;display: none;
+}
+
+.fix_top p.wx:hover img {
+    display: block;
+}
+
+.fix_top p.top {
+    font-size: 25px;
+}
