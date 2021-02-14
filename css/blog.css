@@ -1,0 +1,58 @@
+.content .content_inner {
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.content .content_inner ul.bc_left {
+    float: left;
+}
+
+.content .content_inner ul.bc_right {
+    float: right;
+}
+
+.content .content_inner ul li.blog_pic {
+    width: 483px;
+    padding: 0 33px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.content .content_inner ul li.blog_pic:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    transition: all .4s ease 0s;
+}
+
+.content .content_inner ul li.blog_pic .pic {
+    padding: 54px 0 37px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content .content_inner ul li.blog_pic .pic img {
+    width: 100%;
+}
+
+.content .content_inner ul li.blog_pic .time {
+    overflow: hidden;
+    line-height: 50px;
+}
+
+.content .content_inner ul li.blog_pic .time .t_left {
+    float: left;
+    font-size: 14px;
+    color: #555;
+}
+
+.content .content_inner ul li.blog_pic .time .t_left img {
+    width: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.content .content_inner ul li.blog_pic .time .t_right {
+    float: right;
+    font-size: 12px;
+    color: #aaa;
+}
